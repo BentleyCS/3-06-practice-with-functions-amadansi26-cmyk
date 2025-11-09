@@ -13,11 +13,10 @@ def semiPerimeter(s1, s2, s3):
 
 #Modify the below function such that it takes in 4 arguments. multiply the first
 #argument by the difference between itself and each individual argument. Reference herons formula for more context.
+import math
 def multiplyDifferences(s, a, b, c):
-    s_less_a = s - a
-    s_less_b = s - b
-    s_less_c = s - c
-    return math.sqrt(s * s_less_a * s_less_b * s_less_c)
+        return math.sqrt(s * (s - a) * (s - b) * (s - c))
+multiplyDifferences(3, 2, 2, 2)
 
 #Given the 3 sides of a triangle return the area.
 #use herons formula
