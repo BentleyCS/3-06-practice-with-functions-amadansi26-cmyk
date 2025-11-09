@@ -9,7 +9,6 @@ def root(n):
 #the perimeter of a triangle.
 def semiPerimeter(s1, s2, s3):
     return (s1+s2+s3)/2
-semiPerimeter(5,5,5)
 
 
 #Modify the below function such that it takes in 4 arguments. multiply the first
@@ -18,8 +17,7 @@ def multiplyDifferences(s, a, b, c):
     s_less_a = s - a
     s_less_b = s - b
     s_less_c = s - c
-    return(s*s_less_a*s_less_b*s_less_c)
-multiplyDifferences(3, 2, 2, 2)
+    return s * s_less_a * s_less_b * s_less_c
 
 #Given the 3 sides of a triangle return the area.
 #use herons formula
