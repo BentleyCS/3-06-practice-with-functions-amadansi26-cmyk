@@ -17,7 +17,7 @@ def multiplyDifferences(s, a, b, c):
     s_less_a = s - a
     s_less_b = s - b
     s_less_c = s - c
-    return s * s_less_a * s_less_b * s_less_c
+    return math.sqrt(s * s_less_a * s_less_b * s_less_c)
 
 #Given the 3 sides of a triangle return the area.
 #use herons formula
