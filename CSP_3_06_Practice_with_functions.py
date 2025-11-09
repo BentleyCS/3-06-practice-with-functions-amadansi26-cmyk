@@ -21,7 +21,8 @@ multiplyDifferences(3, 2, 2, 2)
 #Given the 3 sides of a triangle return the area.
 #use herons formula
 #Use the functions above.
-def herons(s, a, b, c):
+import math
+def herons(a, b, c):
     s = (a + b + c)/2
     s_less_a = s - a
     s_less_b = s - b
