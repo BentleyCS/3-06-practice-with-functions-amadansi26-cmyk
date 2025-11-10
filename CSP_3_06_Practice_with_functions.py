@@ -24,10 +24,12 @@ multiplyDifferences(3, 2, 2, 2)
 import math
 def herons(a, b, c):
     s = (a + b + c)/2
+    #s = semiPerimeter(a,b,c)
     s_less_a = s - a
     s_less_b = s - b
     s_less_c = s - c
     return math.sqrt(s*s_less_a*s_less_b*s_less_c)
+    #return( root(multiplyDifferences(s,a,b,c))
 
 
 #quadratic equation
